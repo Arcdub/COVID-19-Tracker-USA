@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MainActivity">
+    <item
+        android:id="@+id/hint_reshow_tutorial"
+        android:icon="@drawable/ic_help_circle_outline_white_24dp"
+        android:title="@string/hint_reshow_tutorial"
+        app:showAsAction="always|withText">
+    </item>
+</menu>

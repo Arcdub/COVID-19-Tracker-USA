@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ripple android:color="@color/dull_white_transparent" xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/rounder_corner"></item>
+</ripple>

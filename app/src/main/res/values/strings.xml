@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">COVID Tracker (USA)</string>
+    <string name="no_data_found">No data found.</string>
+    <string name="no_internet_connection">No internet connection.</string>
+    <string name="positive_cases">Positive</string>
+    <string name="negative_cases">Negative</string>
+    <string name="hospitalized">Hospitalized</string>
+    <string name="recovered">Recovered</string>
+    <string name="testsTotal">Total Tests</string>
+    <string name="source_thanks">Source: The COVID Tracking Project</string>
+    <string name="usa_covid_data">COVID-19 USA Spread</string>
+    <string name="disclaimer_text">Data is updated multiple times daily.</string>
+    <string name="hint_refresh_title">Refresh the Data</string>
+    <string name="hint_refresh_description">Swipe downwards to refresh the data.</string>
+    <string name="hint_see_more_data_title">See Daily Breakdown</string>
+    <string name="hint_see_more_data_description">Tap this window to view a day-by-day breakdown of the data.</string>
+    <string name="hint_reshow_tutorial">Show tutorial</string>
+    <string name="last_modified">last modified</string>
+</resources>

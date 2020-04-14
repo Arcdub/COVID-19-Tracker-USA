@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">@color/grey_900</color>
+    <color name="colorPrimaryDark">@color/grey_900</color>
+    <color name="colorAccent">@color/blue_faded_700</color>
+    <color name="fade_blue_300">#4A7BA7</color>
+    <color name="totalCasesColor">#2B3D4D</color>
+    <color name="pure_white">#FFFFFFFF</color>
+    <color name="less_white">#f7f7f7</color>
+    <color name="lighter_gray">#ebeeef</color>
+    <color name="muted_gray">#D9DCDD</color>
+    <color name="dull_white_transparent">#B0E4E4E4</color>
+    <color name="dull_gray">#DCC5C5C5</color>
+    <color name="red_faded_900">#742323</color>
+    <color name="red_faded_900_transparent">#834C1717</color>
+    <color name="grey_850">#3b3b3b</color>
+    <color name="grey_900">#212121</color>
+    <color name="blue_faded_700">#3A4692</color>
+</resources>

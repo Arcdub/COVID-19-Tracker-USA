@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/ripple_rounder">
+
+    <LinearLayout
+        android:id="@+id/data_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/US_Numbers"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:paddingBottom="16dp">
+
+            <TextView
+                android:id="@+id/positivesTotalText"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1.5"
+                android:gravity="end"
+                android:text="@null"
+                android:textColor="@color/muted_gray"
+                android:textSize="40sp"
+                android:textStyle="bold"
+                tools:text="38,200" />
+
+            <TextView
+                android:id="@+id/confirmedCasesText"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="6dp"
+                android:layout_weight="0.8"
+                android:gravity="bottom"
+                android:paddingEnd="16dp"
+                android:paddingBottom="8dp"
+                android:text="@string/positive_cases"
+                android:textColor="@color/dull_white_transparent"
+                android:textSize="20sp"
+                tools:text="Positive" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:paddingBottom="16dp">
+
+            <TextView
+                android:id="@+id/hospitalizedTotalText"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1.5"
+                android:gravity="end"
+                android:text="@null"
+                android:textColor="@color/muted_gray"
+                android:textSize="40sp"
+                android:textStyle="bold"
+                tools:text="1,000" />
+
+            <TextView
+                android:id="@+id/hospitalizedText"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="6dp"
+                android:layout_weight="0.8"
+                android:gravity="bottom"
+                android:paddingBottom="8dp"
+                android:text="@string/hospitalized"
+                android:textColor="@color/dull_white_transparent"
+                android:textSize="20sp"
+                tools:text="Hospitalized" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:paddingBottom="16dp">
+
+            <TextView
+                android:id="@+id/recoveredTotalText"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1.5"
+                android:gravity="end"
+                android:text="@null"
+                android:textColor="@color/muted_gray"
+                android:textSize="40sp"
+                android:textStyle="bold"
+                tools:text="8,900" />
+
+            <TextView
+                android:id="@+id/recoveredText"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="6dp"
+                android:layout_weight="0.8"
+                android:gravity="bottom"
+                android:paddingBottom="8dp"
+                android:text="@string/recovered"
+                android:textColor="@color/dull_white_transparent"
+                android:textSize="20sp"
+                tools:text="Recovered" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:orientation="horizontal"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:paddingBottom="16dp">
+
+            <TextView
+                android:id="@+id/negativeTotalText"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1.5"
+                android:gravity="end"
+                android:text="@null"
+                android:textColor="@color/muted_gray"
+                android:textSize="40sp"
+                android:textStyle="bold"
+                tools:text="12,886,000" />
+
+            <TextView
+                android:id="@+id/negativeCasesText"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="6dp"
+                android:layout_weight="0.8"
+                android:gravity="bottom"
+                android:paddingBottom="8dp"
+                android:text="@string/negative_cases"
+                android:textColor="@color/dull_white_transparent"
+                android:textSize="20sp"
+                tools:text="Negative" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:orientation="horizontal"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp">
+
+            <TextView
+                android:id="@+id/testNumbersText"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1.5"
+                android:gravity="end"
+                android:text="@null"
+                android:textColor="@color/muted_gray"
+                android:textSize="40sp"
+                android:textStyle="bold"
+                tools:text="300" />
+
+            <TextView
+                android:id="@+id/totalTestsText"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="6dp"
+                android:layout_weight="0.8"
+                android:gravity="bottom"
+                android:paddingBottom="8dp"
+                android:text="@string/testsTotal"
+                android:textColor="@color/dull_white_transparent"
+                android:textSize="20sp"
+                tools:text="Total Tests" />
+        </LinearLayout>
+    </LinearLayout>
+
+<!--    <LinearLayout-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_below="@+id/data_container"-->
+<!--        android:layout_centerHorizontal="true"-->
+<!--        android:layout_marginTop="12dp"-->
+<!--        android:layout_marginBottom="16dp"-->
+<!--        android:orientation="horizontal">-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/lastModifiedText"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginEnd="4dp"-->
+<!--            android:ellipsize="end"-->
+<!--            android:fontFamily="sans-serif-medium"-->
+<!--            android:gravity="end"-->
+<!--            android:text="@string/last_modified"-->
+<!--            android:textAllCaps="false"-->
+<!--            android:textColor="@color/dull_white_transparent"-->
+<!--            android:textSize="12sp"-->
+<!--            tools:text="last modified" />-->
+
+        <TextView
+            android:id="@+id/dateTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/data_container"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="16dp"
+            android:ellipsize="end"
+            android:fontFamily="sans-serif-medium"
+            android:gravity="start"
+            android:textAllCaps="false"
+            android:textColor="@color/dull_white_transparent"
+            android:textSize="12sp"
+            tools:text="Apr 07, 2020" />
+<!--    </LinearLayout>-->
+
+    <TextView
+        android:id="@+id/US_Numbers"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="24dp"
+        android:gravity="center"
+        android:padding="8dp"
+        android:text="@string/usa_covid_data"
+        android:textColor="@color/dull_white_transparent"
+        android:textSize="24sp"
+        tools:text="COVID-19 USA Spread Data" />
+</RelativeLayout>

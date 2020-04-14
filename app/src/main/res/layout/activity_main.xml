@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/red_faded_900">
+
+    <ProgressBar
+        android:id="@+id/hint_dummy_view"
+        style="@style/Widget.AppCompat.ProgressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="78dp"
+        android:visibility="invisible" />
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/swipeRefresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clickable="true"
+            android:focusable="true">
+
+            <ListView
+                android:id="@+id/list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="24dp"
+                android:layout_marginEnd="24dp"
+                android:clickable="true"
+                android:divider="@null"
+                android:dividerHeight="0dp"
+                android:focusable="true"
+                android:orientation="vertical" />
+
+            <ProgressBar
+                android:id="@+id/loading_spinner"
+                style="@style/Widget.AppCompat.ProgressBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center" />
+
+            <TextView
+                android:id="@+id/US_Numbers"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="24dp"
+                android:gravity="center"
+                android:padding="8dp"
+                android:text="@string/disclaimer_text"
+                android:textColor="@color/lighter_gray"
+                android:textSize="18sp" />
+
+            <!--            <TextView-->
+            <!--                android:id="@+id/positivesTotalText"-->
+            <!--                android:layout_width="match_parent"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:maxLength="125"-->
+            <!--                android:maxLines="1"-->
+            <!--                android:layout_gravity="center"-->
+            <!--                android:paddingStart="24dp"-->
+            <!--                android:paddingEnd="24dp"-->
+            <!--                android:text="@null"-->
+            <!--                android:textColor="@color/lighter_gray"-->
+            <!--                android:textSize="40sp"-->
+            <!--                android:textStyle="bold"-->
+            <!--                tools:text="9,000 Cases" />-->
+
+            <TextView
+                android:id="@+id/noDataFoundText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:textColor="@color/lighter_gray"
+                tools:text="No data found." />
+
+            <TextView
+                android:id="@+id/credits"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_marginStart="48dp"
+                android:layout_marginEnd="48dp"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/ripple_round"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center"
+                android:padding="8dp"
+                android:text="@string/source_thanks"
+                android:textColor="@color/dull_white_transparent"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                tools:text="Source: The COVID Tracking Project" />
+
+        </FrameLayout>
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+</RelativeLayout>
