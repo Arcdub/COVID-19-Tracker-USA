@@ -6,14 +6,6 @@ package arcsky.steph.covidtracker;
 
 /*
  * Dedicated to the Glory of God.
- *
- * He has reconciled us (sinners; imperfect, fallen people who cannot meet God's standard of
- * goodness - Romans 3:23) to Himself through the atoning death of His one and only Son,
- * Jesus Christ (Romans 5:6, 5:8, 2 Corinthians 5:15), who lived a perfect life, died on our
- * behalf (Romans 6:23), and rose on the third day (1 Corinthians 15:3-4), defeating death and
- * the grave, and He offers to all who would receive Jesus the right to be called children
- * of God (John 1:12), and the free gift of Eternal Life (John 14:6).
- *
  * https://www.gotquestions.org/Jesus-died-for-our-sins.html
  */
 
