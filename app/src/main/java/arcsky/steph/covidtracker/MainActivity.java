@@ -2,9 +2,7 @@ package arcsky.steph.covidtracker;
 
 /*
  * Created by @Arcdub Github - 4/14/2020 - https://github.com/Arcdub
- */
-
-/*
+ *
  * Dedicated to the Glory of God.
  * https://www.gotquestions.org/Jesus-died-for-our-sins.html
  */
