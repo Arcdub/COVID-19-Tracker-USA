@@ -105,7 +105,7 @@ public final class QueryUtils {
             String hospitalized = casesData.getString("hospitalizedCurrently");
             String recovered = casesData.getString("recovered");
             String tests = casesData.getString("totalTestResults");
-            String lastModified = casesData.getString("lastModified");
+            String lastModified = casesData.getString("dateChecked");
             JSONData jsonData = new JSONData(positive, negative, hospitalized, recovered, tests, lastModified);
             JSONList.add(jsonData);
 //            }

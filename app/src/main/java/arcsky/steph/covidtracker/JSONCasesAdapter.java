@@ -47,7 +47,7 @@ public class JSONCasesAdapter extends ArrayAdapter<JSONData> {
         TextView dateTextView = convertView.findViewById(R.id.dateTextView);
 
         DateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss.SSSXXX");
-        Date date = null;
+        Date date = new Date();
         try {
             date = dateFormat.parse(currentCasesData.getLastModified());
         } catch (ParseException e) {
