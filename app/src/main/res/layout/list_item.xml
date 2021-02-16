@@ -97,7 +97,7 @@
             android:paddingBottom="16dp">
 
             <TextView
-                android:id="@+id/recoveredTotalText"
+                android:id="@+id/deathsTotalText"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1.5"
@@ -109,14 +109,14 @@
                 tools:text="8,900" />
 
             <TextView
-                android:id="@+id/recoveredText"
+                android:id="@+id/deathsText"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_marginStart="6dp"
                 android:layout_weight="0.8"
                 android:gravity="bottom"
                 android:paddingBottom="8dp"
-                android:text="@string/recovered"
+                android:text="@string/deaths"
                 android:textColor="@color/dull_white_transparent"
                 android:textSize="20sp"
                 tools:text="Recovered" />

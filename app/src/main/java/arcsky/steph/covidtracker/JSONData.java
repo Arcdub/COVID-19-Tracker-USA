@@ -5,7 +5,7 @@ public class JSONData {
     private String mPositive;
     private String mNegative;
     private String mHospitalized;
-    private String mRecovered;
+    private String mDeaths;
     private String mTests;
     private String mLastModified;
 //    private String mWindSpeed;
@@ -17,12 +17,12 @@ public class JSONData {
     /**
      * Constructs a new {@link JSONData} object.
      */
-    public JSONData(String positive, String negative, String hospitalized, String recovered, String tests, String lastModified) {
+    public JSONData(String positive, String negative, String hospitalized, String deaths, String tests, String lastModified) {
 
         mPositive = positive;
         mNegative = negative;
         mHospitalized = hospitalized;
-        mRecovered = recovered;
+        mDeaths = deaths;
         mTests = tests;
         mLastModified = lastModified;
 
@@ -37,7 +37,7 @@ public class JSONData {
 
     public String getHospitalized() { return mHospitalized; }
 
-    public String getRecovered() { return mRecovered; }
+    public String getDeaths() { return mDeaths; }
 
     public String getTestsTotal() { return mTests; }
 

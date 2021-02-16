@@ -5,7 +5,7 @@
     <string name="positive_cases">Positive</string>
     <string name="negative_cases">Negative</string>
     <string name="hospitalized">Hospitalized</string>
-    <string name="recovered">Recovered</string>
+    <string name="deaths">Deaths</string>
     <string name="testsTotal">Total Tests</string>
     <string name="source_thanks">Source: The COVID Tracking Project</string>
     <string name="usa_covid_data">COVID-19 USA Spread</string>

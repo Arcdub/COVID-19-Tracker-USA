@@ -14,7 +14,6 @@ import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
-import java.util.Locale;
 
 public class JSONCasesAdapter extends ArrayAdapter<JSONData> {
 
@@ -42,7 +41,7 @@ public class JSONCasesAdapter extends ArrayAdapter<JSONData> {
         TextView positivesTextView = convertView.findViewById(R.id.positivesTotalText);
         TextView negativesTextView = convertView.findViewById(R.id.negativeTotalText);
         TextView hospitalizedTextView = convertView.findViewById(R.id.hospitalizedTotalText);
-        TextView recoveredTextView = convertView.findViewById(R.id.recoveredTotalText);
+        TextView deathsTextView = convertView.findViewById(R.id.deathsTotalText);
         TextView testsTotalTextView = convertView.findViewById(R.id.testNumbersText);
         TextView dateTextView = convertView.findViewById(R.id.dateTextView);
 
@@ -64,12 +63,12 @@ public class JSONCasesAdapter extends ArrayAdapter<JSONData> {
         String stringPositives = currentCasesData.getPositives();
         String stringNegatives = currentCasesData.getNegatives();
         String stringHospitalized = currentCasesData.getHospitalized();
-        String stringRecovered = currentCasesData.getRecovered();
+        String stringDeaths = currentCasesData.getDeaths();
         String stringTests = currentCasesData.getTestsTotal();
         int intPositives = Integer.parseInt(stringPositives);
         int intNegatives = Integer.parseInt(stringNegatives);
         int intHospitalized = Integer.parseInt(stringHospitalized);
-        int intRecovered = Integer.parseInt(stringRecovered);
+        int intDeaths = Integer.parseInt(stringDeaths);
         int intTests = Integer.parseInt(stringTests);
 
         // Use the DecimalFormat class to format the Positives and Negatives ints to include commas.
@@ -77,7 +76,7 @@ public class JSONCasesAdapter extends ArrayAdapter<JSONData> {
         String positiveFormatted = dFormatter.format(intPositives);
         String negativeFormatted = dFormatter.format(intNegatives);
         String hospitalizedFormatted = dFormatter.format(intHospitalized);
-        String recoveredFormatted = dFormatter.format(intRecovered);
+        String deathsFormatted = dFormatter.format(intDeaths);
         String testsFormatted = dFormatter.format(intTests);
         String lastModified = res.getString(R.string.last_modified);
 
@@ -85,7 +84,7 @@ public class JSONCasesAdapter extends ArrayAdapter<JSONData> {
         positivesTextView.setText(positiveFormatted);
         negativesTextView.setText(negativeFormatted);
         hospitalizedTextView.setText(hospitalizedFormatted);
-        recoveredTextView.setText(recoveredFormatted);
+        deathsTextView.setText(deathsFormatted);
         testsTotalTextView.setText(testsFormatted);
         dateTextView.setText(lastModified + " " + formattedDateLastModified);
 

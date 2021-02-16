@@ -103,10 +103,10 @@ public final class QueryUtils {
             String positive = casesData.getString("positive");
             String negative = casesData.getString("negative");
             String hospitalized = casesData.getString("hospitalizedCurrently");
-            String recovered = casesData.getString("recovered");
+            String deaths = casesData.getString("death");
             String tests = casesData.getString("totalTestResults");
             String lastModified = casesData.getString("dateChecked");
-            JSONData jsonData = new JSONData(positive, negative, hospitalized, recovered, tests, lastModified);
+            JSONData jsonData = new JSONData(positive, negative, hospitalized, deaths, tests, lastModified);
             JSONList.add(jsonData);
 //            }
         } catch (JSONException e) {
